@@ -6,7 +6,11 @@ public interface ITablero {
 	 * Devuelve el Tablero como una matriz
 	 * @return matriz de int conteniendo los valores de las casillas del Tablero
 	 */
+<<<<<<< HEAD
+	public int[][] getTablero();
+=======
 	int[][] getTablero();
+>>>>>>> 63bed27159feab074bb502bf33e5aaf24a55120b
 
 	/**
 	 * Modifica el contenido del Tablero completo
@@ -15,8 +19,13 @@ public interface ITablero {
 	public void setTablero(int[][] tablero);
 	
 	/**
+<<<<<<< HEAD
+	 * Indica el tamaÃ±o que tiene el tablero: la dimension de la matriz de casillas
+	 * @return TamaÃ±o del tablero; por ejemplo: 8 en un tablero de 8x8
+=======
 	 * Indica el tamaño que tiene el tablero: la dimension de la matriz de casillas
 	 * @return Tamaño del tablero; por ejemplo: 8 en un tablero de 8x8
+>>>>>>> 63bed27159feab074bb502bf33e5aaf24a55120b
 	 */
 	public int getTamanio();
 	
@@ -30,8 +39,13 @@ public interface ITablero {
 	
 	/**
 	 * Modifica el valor de la casilla indicada
+<<<<<<< HEAD
+	 * @param x - Posicion x de la casilla
+	 * @param y - Posicion y de la casilla
+=======
 	 * @param x - Posición x de la casilla
 	 * @param y - Posición y de la casilla
+>>>>>>> 63bed27159feab074bb502bf33e5aaf24a55120b
 	 * @param valor
 	 */
 	public void setPosicion(int x, int y, int valor);
