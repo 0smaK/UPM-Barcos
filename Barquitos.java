@@ -1,6 +1,5 @@
 package p1;
 
-<<<<<<< HEAD
 import java.awt.Color;
 import java.awt.Frame;
 import java.awt.event.WindowAdapter;
@@ -11,18 +10,10 @@ public class Barquitos extends Frame implements IBarquitos{
     private Tablero modelo;
     private Vista vista;
     
-=======
-import java.awt.Frame;
-
-
-public class Barquitos extends Frame implements IBarquitos{
-
->>>>>>> 63bed27159feab074bb502bf33e5aaf24a55120b
 	public static void main(String[] args) {
 		int[] numBarcosLong = null;
 		int tamanioTablero = 8;
 		new Barquitos(numBarcosLong, tamanioTablero);
-<<<<<<< HEAD
 	}
 	
 	public Barquitos(int[] numBarcosLong, int tamanioTablero) {
@@ -42,24 +33,6 @@ public class Barquitos extends Frame implements IBarquitos{
 	
 
 	
-=======
-		
-	}
-	
-	public Barquitos(int[] numBarcosLong, int tamanioTablero) {
-		Frame frame = new Frame();
-		
-		int tamCasilla = 50; //50px
-		int margenCasilla = 5; // 5px
-		
-		tamanioTablero = margenCasilla+(tamanioTablero*(tamCasilla+margenCasilla));
-		
-		frame.setSize(tamanioTablero,tamanioTablero);
-		frame.setVisible(true);
-		frame.setLocationRelativeTo(null);
-	}
-
->>>>>>> 63bed27159feab074bb502bf33e5aaf24a55120b
 	@Override
 	public void colocarBarcos() {
 		

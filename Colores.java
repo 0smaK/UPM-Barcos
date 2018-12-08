@@ -1,6 +1,5 @@
 package p1;
 
-<<<<<<< HEAD
 import java.awt.Color;
 
 public class Colores {
@@ -22,8 +21,4 @@ public class Colores {
 	
 	
 	
-=======
-public class Colores {
-
->>>>>>> 63bed27159feab074bb502bf33e5aaf24a55120b
 }

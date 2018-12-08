@@ -2,15 +2,11 @@ package p1;
 
 import java.awt.Canvas;
 import java.awt.Graphics;
-<<<<<<< HEAD
 import java.awt.Graphics2D;
-=======
->>>>>>> 63bed27159feab074bb502bf33e5aaf24a55120b
 import java.util.Observable;
 
 public class Vista extends Canvas implements IVista {
 	
-<<<<<<< HEAD
 	private Graphics2D g2d;
 	private Tablero modelo;
 	
@@ -41,16 +37,6 @@ public class Vista extends Canvas implements IVista {
 		    }
 	    
 
-=======
-	public Vista(Tablero modelo) {
-		// TODO Auto-generated constructor stub
-	}
-	
-	@Override
-	public void paint(Graphics g) {
-		// TODO Auto-generated method stub
-		
->>>>>>> 63bed27159feab074bb502bf33e5aaf24a55120b
 	}
 
 	@Override
