@@ -9,6 +9,7 @@ import java.awt.event.WindowEvent;
 public class Barquitos extends Frame implements IBarquitos{
     private Tablero modelo;
     private Vista vista;
+    private Controlador controlador;
     public static final int[] numBarcosLong = {1,2,1,1}; //numero de barcos disponibles de ocupacion 1,2,3,4 casillas respectivamente
     public static final int tamanioTablero = 8;
     private static final int tamCasilla = 50;
@@ -28,8 +29,10 @@ public class Barquitos extends Frame implements IBarquitos{
 	public Barquitos(int[] numBarcosLong, int tamanioTablero) {
 		modelo = new Tablero(tamanioTablero);
 		vista = new Vista(modelo);
-		Controlador controlador = new Controlador(this);
+		controlador = new Controlador(this);
 		addMouseListener(controlador);
+
+
 		Frame frame = new Frame();
 		
 		int tamframe = margenCasilla+(tamanioTablero*(tamCasilla+margenCasilla));
