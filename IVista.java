@@ -2,6 +2,7 @@ package p1;
 
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.beans.PropertyChangeEvent;
 import java.util.Observable;
 import java.lang.Object;
 
@@ -18,8 +19,8 @@ public interface IVista {
 	
 	/**
 	 * Actualiza el dibujo del modelo
-	 * @param o - Informacion del modelo (Tablero)
-	 * @param arg Posibles argumentos para parametrizar el resultado de la vista
+	 * @param evt - PropertyChangeEvent
 	 */
-	public void update(Observable o, Object arg);
-}
+	public void propertyChange(PropertyChangeEvent evt);
+	
+	}

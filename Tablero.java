@@ -3,15 +3,17 @@ package p1;
 public class Tablero implements ITablero {
 	
 	private int tamanioTablero;
+	private int tablero[][];
+	public int estado; //0 = BARCO sin daño, 1 = AGUA, 2 = BARCO TOCADO, 3 = BARCO HUNDIDO
 	
 	public Tablero(int tamanio) {
 		tamanioTablero = tamanio;
+		tablero = new int[tamanioTablero][tamanioTablero];
 	}
 	
 	@Override
 	public int[][] getTablero() {
-		// TODO Auto-generated method stub
-		return null;
+		return tablero;
 	}
 
 	@Override
@@ -27,19 +29,17 @@ public class Tablero implements ITablero {
 
 	@Override
 	public int getPosicion(int x, int y) {
-		// TODO Auto-generated method stub
-		return 0;
+		estado = tablero[x][y];
+		return estado;
 	}
 
 	@Override
 	public void setPosicion(int x, int y, int valor) {
-		// TODO Auto-generated method stub
-		
+		tablero[x][y] = valor;
 	}
 
 	@Override
 	public void borra() {
-		// TODO Auto-generated method stub
 		
 	}
 
